@@ -51,17 +51,17 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         if(
-             (escolhaApp == "tesoura" && escolhaUsuario == "papel") ||
-             (escolhaApp == "papel" && escolhaUsuario == "pedra")   ||
-             (escolhaApp == "pedra" && escolhaUsuario == "tesoura")
+             (escolhaApp.equals("tesoura") && escolhaUsuario.equals("papel")) ||
+             (escolhaApp.equals("papel") && escolhaUsuario.equals("pedra"))   ||
+             (escolhaApp.equals("pedra") && escolhaUsuario.equals("tesoura"))
         ){
              txtResultado.setText("Você Perdeu :(");
 
         }else if(
 
-             (escolhaUsuario == "tesoura" && escolhaApp == "papel") ||
-             (escolhaUsuario == "papel" && escolhaApp == "pedra")   ||
-             (escolhaUsuario == "pedra" && escolhaApp == "tesoura")
+             (escolhaUsuario.equals("tesoura") && escolhaApp.equals("papel")) ||
+             (escolhaUsuario.equals("papel") && escolhaApp.equals("pedra"))   ||
+             (escolhaUsuario.equals("pedra") && escolhaApp.equals("tesoura"))
         ){
             txtResultado.setText("Você Ganhou ;)");
 
